@@ -1,0 +1,25 @@
+server:
+  port: 8585
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: root
+    url: jdbc:mysql://localhost/PhoneBookApp-03
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+    
+    app1:
+        message:
+          saveSuccess: contact save successfully
+          saveFail: contact not save successfully
+          updateSuccess: Contact Update Successfully
+          updateFail: Contact Not upadate Successfully
+          deleteSuccess: Contact Deleted Successfullly
+          deleteFail: Contact not Deleted Successfully
+          
